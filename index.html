@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Charity Database Page</title>
+    <!--This makes sure that there screens are not seen from the start -->
+    <style>
+      .screen{display:none;}
+    </style>
+    
+      
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Land Collection Data</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav"> <!--Think of that as your topnav -->
+          <a data-screen="home" class="nav-item nav-link" >Home Page</a>
+          <a data-screen="form" class="nav-item nav-link" >About Us</a>
+          <a data-screen="data" class="nav-item nav-link" >Other Screen</a>
+          <a data-screen="map" class="nav-item nav-link" >Other Screen</a> 
+          <a data-screen="about" class="nav-item nav-link" >Other Screen</a>       
+        </div>
+      </div>
+      <!-- the original screens where placed here-->
+    </nav>
+    <!--Here is where I am going to put the screens -->
+    <div id="content">
+
+    <!-- The Home page -->
+      <div class="screen" id="home">
+        
+        <center>
+          <div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <!-- this is for the first picture of the slide -->
+        <img class="d-block w-100" width="300" height="500" src="Chicago.jpg" data-holder-rendered="true">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Our Purpose</h5>
+          <p>Testing the page for bugs</p>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <!-- this is the image for the second slide -->
+        <img class="d-block w-100" width="400" height="500" src="Illini.png" data-holder-rendered="true">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>This is where I am from</h5>
+          <p>TA98 is for who I work for</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17962e2a55b%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17962e2a55b%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277.19166564941406%22%20y%3D%22216.2%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+        </center>
+        
+      </div>
+
+      <!--The Search Page -->
+      <div class="screen" id="form">
+        <center>
+          <div class="card w-75">
+            <div class="card-body">
+              <h5 class="card-title">Search!</h5>
+              <p class="card-text">Enter ward Number</p>
+              <form class="d-flex" >
+                <input class="form-control me-2" id="ward" type="search" placeholder="i.e) 28 (Just the number please)" >
+                  
+                  
+
+              </form>
+              <button  id= "searchButton" class="btn btn-outline-success">Click here to search for Ward Numbers</button>  
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <!-- The results page -->
+      <div class="screen" id="data">
+        <center>
+        <h1>Results page</h1>
+          <div class="alert alert-primary" role="alert">
+            New Search Results Appear Below Go Check Them Out!!!
+          </div>
+        </center>
+          <!--
+            Below is the main code for the card
+            perhaps change the text from the page in order
+            to have the reader/ user understand how to 'read'
+            their results
+          -->
+            <div class="container">
+
+              <div class="row">
+                <div class="card template" >
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p2 class="card-text2">Some quick example text to build on the card title and make up the bulk of the card's content.</p2>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <!--Here is where  the cards are populated
+        -->
+        
+      </div>
+
+
+      <!-- The Map page -->
+      <div class="screen" id="map">
+        <center>
+          <h1>MAP</h1>
+            
+              <script> // Move it to the top, before the closing body tag
+                    // Initialize and add the map
+                    let map;//creating a variable (global)
+                    function initMap() {
+                      // The location of Uluru
+                      const chicago = { lat: 41.8696, lng: -87.6496 };
+                      // The map, centered at Uluru
+                      map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 4,
+                        center: chicago,
+                      });
+                      // The marker, positioned at Uluru
+                      const marker = new google.maps.Marker({
+                        position: chicago,
+                        map: map,
+                      });
+                    }
+                </script>
+                  <h3>Google map pointing to UIC</h3>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                      
+        </center>
+
+      </div>
+
+
+      <!-- The about page -->
+      <div class="screen" id="about">
+        <div class="alert alert-primary" role="alert">
+          Wow you took time to see who made the app?!! My hat's off to you
+        </div>
+          <center>
+            <h5 class="card-title">Goal</h5>
+                  <p class="card-text">For this project, I built a Single-Page App that allows users to search for Chicago City-Owned Land Inventory data. I needed to use an app shell model, Bootstrap for all of the UI elements, and have 5 screens, that consist of: Home/Instruction, Form, Data, Map, and a About page.</p>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 class="card-title">Abraham Morales Arroyo</h5>
+                
+                <p class="card-text">He is a softmore at the University of Illinois at UIC and he is currently enrolled in IT 202. Want to get to know me better? Click on my personal page to do so.</p>
+                
+                <a href="https://abrahamof606.github.io/" class="btn btn-primary">Personal Page</a>
+              </div>
+            </div>
+          </center>
+        </div>
+    </div>
+    <!-- End of content -->
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Here is where the typescript is going to be, that makes the screens visible-->
+      <script>
+        // This will make sure that the home screen is always being shown 
+        document.querySelector("#home").style.display= "block";
+
+        let navAnchors= document.querySelectorAll("div#navbarNavAltMarkup a")
+
+        navAnchors.forEach( (anchor) => {
+          anchor.addEventListener("click", (event) => {
+
+            //hides all the screens first
+            document.querySelectorAll(".screen").forEach( (screen) => {
+              screen.style.display = "none";
+            });
+            
+
+            //find relevant screen
+            let targetScreen= document.querySelector("#" + screen);
+
+            //show it 
+            targetScreen.style.display= "block";
+          })
+        })
+      </script>
+      
+  </body>
+</html>
